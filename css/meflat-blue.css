@@ -383,7 +383,7 @@ a:focus,
 
 .jumbotron.bg-image {
     position: relative;
-    background:url(../assets/wallpaper1.jpg) 50% 50% no-repeat;
+    background:url(../assets/wallpaper4.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 
@@ -567,10 +567,12 @@ a:focus,
 .img-wrapper {
     position:relative;
     width:100%;
-    height:auto;
-    max-width:800px;
+    /* height:auto; */
+    /* max-width:800px; */
     margin:0 auto;
     overflow:hidden;
+    /* max-height: 768px; */
+    max-width: 278px;
 }
 
 .img-wrapper img {

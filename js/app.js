@@ -9,7 +9,7 @@ $(document).ready(function () {
         typeSpeed: 1,
         contentType: 'text',
         callback: function () {
-            $("#writing-text").css({ "color": "#fff", "background-color": 'rgba(169, 49, 30, 0.7)' });
+            $("#writing-text").css({ "color": "#fff", "background-color": 'rgba(0, 103, 122, 0.47)' });
         },
         preStringTyped: function () { },
         onStringTyped: function () { }
