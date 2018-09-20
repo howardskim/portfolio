@@ -10,7 +10,7 @@ $output = [
 
 //Sanitize name field
 
-$message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$message['name'] = filter_var($_POST['contactName'], FILTER_SANITIZE_STRING);
 if(empty($message['name'])){
     $output['success'] = false;
     $output['messages'][] = 'missing name key';
@@ -24,7 +24,7 @@ if(empty($message['email'])){
 }
 
 //sanitize message
-$message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+$message['message'] = filter_var($_POST['comments'], FILTER_SANITIZE_STRING);
 if(empty($message['message'])){
     $output['success'] = false;
     $output['messages'][] = 'missing message key';
