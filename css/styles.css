@@ -86,3 +86,6 @@
 .tech-icons img{
     height: 100%;
 }
+.row.work-row video{
+    max-width: 100%;
+}
