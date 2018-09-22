@@ -57,7 +57,7 @@
 .details a:link,
 .details a:active {
     color: rgba(255, 103, 68, 0.91);
-    border: 2px solid rgba(255, 103, 68, 0.91) !important;
+    /* border: 2px solid rgba(255, 103, 68, 0.91) !important; */
     background-color: #fff;
 }
 
@@ -88,4 +88,11 @@
 }
 .row.work-row video{
     max-width: 100%;
+}
+.scrollimation .img-wrapper video{
+    width: 100%;
+    height: 50vh;
+}
+.scrollimation .img-wrapper {
+    max-width: none !important;
 }
