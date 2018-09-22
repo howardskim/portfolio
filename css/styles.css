@@ -96,3 +96,27 @@
 .scrollimation .img-wrapper {
     max-width: none !important;
 }
+.container{
+    width: 80%;
+}
+.container #work{
+    /* width: 80%; */
+    margin: 0 auto;
+}
+#about img{
+    width: 500px;
+}
+@media only screen and (max-width: 640px){
+    #work video{
+        max-width: 100%;
+        height: auto
+    }
+}
+@media only screen and (max-width: 932px){
+    .tech-icons img{
+        height: none;
+    }
+    .tech-icons > div{
+        width: 34%;
+    }
+}

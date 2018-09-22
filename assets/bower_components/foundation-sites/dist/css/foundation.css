@@ -497,10 +497,10 @@ pre {
 .is-hidden {
   display: none !important; }
 
-.row {
+/* .row {
   max-width: 75rem;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto; } */
   .row::before, .row::after {
     display: table;
     content: ' '; }
