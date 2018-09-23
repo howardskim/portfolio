@@ -17,7 +17,7 @@ function addClickHandlersToElements() {
     $('.addButton').on('click', handleAddClicked)
     $('.cancelButton').on('click', handleCancelClick)
     $('.getDataFromServerButton').on('click', getDataFromServer);
-    $('#cancelChanges').on('click', function(){
+    $('#cancelChanges').on('click', function () {
         $('#editModal').modal('hide');
     })
     $('#saveChanges').on('click', function () {
@@ -96,7 +96,7 @@ function renderStudentOnDom(eachStudentObject) {
         $('#confirmDeleteModal').modal({
             show: true
         });
-        
+
         function confirmDelete() {
             $(closestRow).remove();
             //this is the main function to delete the student object that was clicked
@@ -112,7 +112,7 @@ function renderStudentOnDom(eachStudentObject) {
         $('.confirmDeleteButton').off();
         $('.confirmDeleteButton').on('click', confirmDelete);
     });
-    editButton.on('click',  function() {
+    editButton.on('click', function () {
         $('#editModal').modal({
             show: true
         })
@@ -135,11 +135,12 @@ function renderStudentOnDom(eachStudentObject) {
     $('tbody').append(tableRow);
 }
 
-function handleSavedUpdate(){
+function handleSavedUpdate() {
     var editedName = $('#editName').val();
     var editedCourse = $('#editCourse').val();
     var editedGrade = $('#editGrade').val();
-    var buttonID = $('#idHolder').text();
+    var buttonID = parseInt($('#idHolder').text().slice(3));
+    console.log(typeof buttonID);
     var the_data = {
         editedName,
         editedCourse,
@@ -153,10 +154,10 @@ function handleSavedUpdate(){
         method: 'GET',
         url: 'data.php',
         success: function (response) {
+            $('tbody').empty();
             $('#editName').val('');
             $('#editCourse').val('');
             $('#editGrade').val('');
-            $('tbody').empty();
             getDataFromServer();
             updateStudentList();
         },
