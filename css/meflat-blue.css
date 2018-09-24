@@ -1208,6 +1208,7 @@ a:focus,
     line-height:40px;
     text-align:center;
     background:rgba(0,0,0,0.2);
+    background: black;
     border-radius:50%;
     -webkit-transition:all .3s ease-out;
     transition:all .3s ease-out;
