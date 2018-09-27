@@ -88,6 +88,7 @@
 }
 .row.work-row video{
     max-width: 100%;
+    border-radius: 5px;
 }
 .scrollimation .img-wrapper video{
     width: 100%;
@@ -111,6 +112,9 @@
         max-width: 100%;
         height: auto
     }
+    #work{
+        padding: 6em 1em 0em;
+    }
 }
 @media only screen and (max-width: 932px){
     .tech-icons img{
@@ -125,4 +129,14 @@
 }
 #main-footer{
     background: white;
+}
+video:hover{
+    cursor: pointer;
+}
+
+.padding-top-bottom{
+    padding: 0 !important;
+}
+.projectContainer > .section-header{
+    padding-top: 50px;
 }
