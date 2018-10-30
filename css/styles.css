@@ -74,14 +74,24 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 5%;
 }
 .colored{
     font-size: 100px;
 }
 .tech-icons > div{
-    margin-top: 40px;
+    margin-top: 100px;
     height: 100px;
     width: 25%;
+}
+.tech-icons p{
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222121;
 }
 .tech-icons img{
     height: 100%;
@@ -117,11 +127,17 @@
     }
 }
 @media only screen and (max-width: 932px){
+    .tech-icons{
+        margin-bottom: 10%;
+    }
     .tech-icons img{
         height: none;
     }
     .tech-icons > div{
         width: 34%;
+    }
+    #detailsH2{
+        font-size: xx-large;
     }
 }
 .social-links i{
