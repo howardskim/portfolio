@@ -111,22 +111,23 @@ function handleCancelClick() {
 
 function renderStudentOnDom(eachStudentObject) {
     var tableRow = $('<tr>');
-    var tableName = $('<td>');
-    var tableCourse = $('<td>');
-    var tableGrade = $('<td>');
-    var tableButton = $('<td>');
+    var tableName = $('<td>').addClass('overflow-hidden');
+    var tableCourse = $('<td>').addClass('overflow-hidden');
+    var tableGrade = $('<td>').addClass('overflow-hidden');
+    var tableButton = $('<td>')
     var editButtonTD = $('<td>')
     var deleteButton = $('<button>', {
-        class: 'btn btn-danger dButton',
+        class: 'btn btn-danger dButton glyphicon glyphicon-trash margin-none',
         id: eachStudentObject.id,
-        style: 'margin-top: 1%; margin-left: 3%',
-        text: 'Delete'
+        // style: 'margin-top: 1%; margin-left: 3%',
+        // text: 'Delete'
+        style: 'margin-left: 2%'
     });
     var editButton = $('<button>', {
-        class: 'btn btn-warning editButton',
+        class: 'btn btn-warning editButton glyphicon glyphicon-edit',
         id: eachStudentObject.id,
-        text: 'Update',
-        style: 'margin-top: 1%'
+        // text: 'Update',
+        // style: 'margin-top: 1%'
     })
     deleteButton.on('click', function () {
         $('#confirmDeleteModal').modal({

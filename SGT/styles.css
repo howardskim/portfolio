@@ -1,0 +1,19 @@
+.btn{
+    padding: 6px 10px !important;
+}
+.student-list{
+    table-layout: fixed;
+}
+.overflow-hidden{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container{
+    /* min-width: 558px; */
+}
+
+@media only screen and (max-width: 548px){
+    .margin-none{
+        margin-left: 0 !important;
+    }
+}
